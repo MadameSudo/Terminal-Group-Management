@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linux Basics: Getting Started & Package Management</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+    }
+    h1 {
+      text-align: center;
+      animation: flash 1s infinite;
+    }
+    h2 {
+      color: #f06292;
+    }
+    .content {
+      text-align: justify;
+      font-size: 1.1em;
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 20px;
+    }
+    code {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      padding-bottom: 10px;
+    }
+    @keyframes flash {
+      0% {
+        color: #f0a7b6;
+      }
+      50% {
+        color: #c9c9c9;
+      }
+      100% {
+        color: #f0a7b6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Linux Basics: Getting Started & Package Management</h1>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Getting Started with the Terminal</h2>
+      <p>
+        Welcome to the world of Linux terminals! These command-line interfaces might seem daunting initially but they offer immense power and control over your system. When you open a terminal, you're essentially communicating with your computer directly using text commands.
+      </p>
+      <p>
+        To launch a terminal, look for applications named "Terminal," "Konsole," or "GNOME Terminal" in your system's menu. Once one of them is opened, you'll see a command prompt waiting for your input—a place where you can execute various commands to perform tasks.
+      </p>
+      <p>
+        Let us explore some fundamental commands:
+      </p>
+      <ul>
+        <li><code>ls</code> - Lists the files and folders in your current directory.</li>
+        <li><code>cd</code> - Changes your current directory. For example, typing <code>cd Documents</code> moves you into the "Documents" folder.</li>
+        <li><code>mkdir</code> - Creates a new directory. For example, <code>mkdir Projects</code> makes a folder named "Projects."</li>
+      </ul>
+      <p>
+        Don't worry if it feels unfamiliar initially, experimenting with these commands helps you understand how they function and eventually navigate through your system's directories.
+      </p>
+    </section>
+
+    <section>
+      <h2>Package & Group Management</h2>
+      <p>
+        Linux relies on package managers, tools that simplify software management. Think of them as centralized hubs for installing, updating, and removing software.
+      </p>
+      <p>
+        Different Linux distributions use various package managers. For example:
+      </p>
+      <ul>
+        <li><strong>Debian-based systems (e.g., Ubuntu):</strong> Use <code>apt</code>. To install software, you'd type something like <code>sudo apt-get install package-name</code>.</li>
+        <li><strong>Red Hat-based systems (e.g., Fedora):</strong> Use <code>yum</code>. To install software, you'd use <code>sudo yum install package-name</code>.</li>
+        <li><strong>Arch-based systems (e.g., Arch Linux):</strong> Use <code>pacman</code>. To install software, you'd use <code>sudo pacman -S package-name</code>.</li>
+      </ul>
+      <p>
+        These commands fetch software from repositories which are collections of software maintained by your distribution. They automatically handle dependencies—other software required for the program to work.
+      </p>
+      <p>
+        Additionally, managing user groups involves commands like <code>adduser</code> and <code>usermod</code>. These commands help you create new users and assign them to specific groups, which also means granting them certain permissions or access to resources.
+      </p>
+      <p>
+        Also, don't hesitate to seek guidance from forums, tutorials, or documentation as you delve into these concepts, it's all part of the learning experience.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Madame Sudo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
